@@ -1,9 +1,10 @@
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:tela_inicial/app_module.dart';
+import 'package:tela_inicial/app_widget.dart';
 import 'package:flutter/material.dart';
-//import 'package:tela_inicial/home_screen.dart';
-import 'package:tela_inicial/login_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ModularApp(module: AppModule(), child: const AppWidget()));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,12 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Emissor',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
     );
   }
 }

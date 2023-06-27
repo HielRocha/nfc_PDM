@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "480379448239",
+    "project_id": "pdm-2023-41a73",
+    "storage_bucket": "pdm-2023-41a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480379448239:android:350519c48267eac9e09d5a",
+        "android_client_info": {
+          "package_name": "com.example.tela_inicial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480379448239-g9v5bglsh7i8g0fgm7gffdeeuuuo5oa6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAALtAKGHctjeY_ZJlAZNqYx4QYmeBKbso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480379448239-g9v5bglsh7i8g0fgm7gffdeeuuuo5oa6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480379448239-eleukru3qm3fk1g8q3tnqb11bbkn5j8b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.telaInicial"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

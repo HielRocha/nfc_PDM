@@ -1,0 +1,13 @@
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/tela_inicial
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.smcbin
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/rafael/trabalhoPdm/PDMTeste/nfc_PDM/tela_home/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
