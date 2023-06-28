@@ -72,12 +72,12 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 16),
                 ElevatedButton(
                   child: const Text('Entrar'),
-                  onPressed: () => Modular.to.navigate("/home"),
+                  onPressed: () => login(),
                 ),
                 const SizedBox(height: 16),
                 ElevatedButton(
                   child: const Text('Cadastrar'),
-                  onPressed: () {},
+                  onPressed: () => cadastrar(),
                 ),
               ],
             ),
@@ -87,14 +87,45 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  login() async {
-    FirebaseAuth.instance.authStateChanges().listen((User? user) {
-      if (user == null) {
-        print('Não logado');
-        Modular.to.navigate("/home");
-      } else {
-        print('Logado');
+  cadastrar() async {
+    try {
+      final credential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _email,
+        password: _password,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'weak-password') {
+        print('The password provided is too weak.');
+      } else if (e.code == 'email-already-in-use') {
+        print('The account already exists for that email.');
       }
-    });
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  login() async {
+    late final credential;
+    try {
+      credential = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: _email, password: _password);
+    } on FirebaseAuthException catch (e) {
+      credential = null;
+      if (e.code == 'user-not-found') {
+        //credential = null;
+        print('No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        //credential = null;
+        print('Wrong password provided for that user.');
+      }
+    }
+    if (credential == null) {
+      print('Não logado');
+    } else {
+      Modular.to.navigate("/home");
+      print('Logado');
+    }
+    ;
   }
 }
