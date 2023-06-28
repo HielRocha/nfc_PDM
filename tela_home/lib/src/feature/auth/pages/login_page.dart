@@ -69,15 +69,21 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: 'Password', border: OutlineInputBorder()),
                 ),
                 Text('Password é: $_password'),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  child: const Text('Entrar'),
-                  onPressed: () => login(),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  child: const Text('Cadastrar'),
-                  onPressed: () => cadastrar(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const SizedBox(height: 16),
+                    ElevatedButton(
+                      child: const Text('Entrar'),
+                      onPressed: () => login(),
+                    ),
+                    const SizedBox(height: 16),
+                    const SizedBox(width: 16),
+                    ElevatedButton(
+                      child: const Text('Cadastrar'),
+                      onPressed: () => cadastrar(),
+                    ),
+                  ],
                 ),
               ],
             ),
