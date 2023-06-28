@@ -85,6 +85,11 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  child: const Text('Resetar'),
+                  onPressed: () => Modular.to.navigate("/resetar"),
+                ),
               ],
             ),
           ),
