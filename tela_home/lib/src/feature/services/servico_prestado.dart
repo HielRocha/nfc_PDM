@@ -1,36 +1,24 @@
 import 'package:flutter/material.dart';
 
+import '../../common/custom_app_bar.dart';
+
 class ServicoPrestado extends StatelessWidget {
   const ServicoPrestado({super.key});
-
-  PreferredSizeWidget _minhaBarra(String texto) {
-    return AppBar(
-      shadowColor: Colors.amber,
-      backgroundColor: Colors.cyan,
-      title: Text(
-        texto,
-        style: TextStyle(
-          fontSize: 38,
-          color: Colors.black,
-        ),
-      ),
-    );
-  }
 
   Widget buildSizedBoxWithInput(String labelText) {
     return SizedBox(
       child: Container(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(labelText, style: TextStyle(fontSize: 18)),
-            SizedBox(height: 10),
+            Text(labelText, style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 10),
             TextField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 labelText: 'Digite o ' + labelText,
-                border: OutlineInputBorder(),
+                border: const OutlineInputBorder(),
               ),
             ),
           ],
@@ -84,7 +72,7 @@ class ServicoPrestado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: _minhaBarra('Dados do Serviço'),
+        appBar: minhaBarra('Dados do Serviço'),
         body: ListView(
           scrollDirection: Axis.vertical,
           children: [
