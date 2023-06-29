@@ -1,0 +1,7 @@
+Grupo de PDM
+git: https://github.com/HielRocha/nfc_PDM
+
+Nomes:
+Hiel Alves Rocha - 1822130018
+Matheus Hipólito da Mata - 2012130021
+Rafael da Rocha Henrard - 1812082028
